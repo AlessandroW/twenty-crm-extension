@@ -9,14 +9,16 @@ A Chrome extension to capture LinkedIn profiles and companies directly into your
 ### Quick Install (Recommended)
 
 1. **[⬇️ Download Latest Release](../../releases/latest)**
-2. Download the `.zip` file from the release
-3. Unzip to a folder on your computer
+2. Download the `twenty-crm-linkedin-extension-*-chrome.zip` file
+3. **Unzip** the file - you should see `manifest.json` and other files directly inside
 4. Open Chrome → `chrome://extensions`
 5. Enable **Developer mode** (toggle top right)
-6. Click **Load unpacked** → select the unzipped folder
+6. Click **Load unpacked** → select the **unzipped folder** (the one containing `manifest.json`)
 7. Click the extension icon and enter your Twenty CRM URL
 
 > **Note**: You must be logged into your Twenty CRM in the same browser for the extension to work.
+>
+> **Tip**: After unzipping, verify the folder contains `manifest.json` at the root level, not inside a subfolder.
 
 ---
 
