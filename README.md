@@ -1,24 +1,36 @@
 # Twenty CRM - LinkedIn Capture Extension
 
-A Chrome extension to capture LinkedIn profiles and companies directly into your self-hosted [Twenty CRM](https://twenty.com).
+A browser extension for **Chrome** and **Firefox** to capture LinkedIn profiles and companies directly into your self-hosted [Twenty CRM](https://twenty.com).
 
 ---
 
 ## 📥 Download & Install
 
-### Quick Install (Recommended)
+### Chrome
 
 1. **[⬇️ Download Latest Release](../../releases/latest)**
-2. Download the `twenty-crm-linkedin-extension-*-chrome.zip` file
+2. Download the `*-chrome.zip` file
 3. **Unzip** the file - you should see `manifest.json` and other files directly inside
 4. Open Chrome → `chrome://extensions`
 5. Enable **Developer mode** (toggle top right)
 6. Click **Load unpacked** → select the **unzipped folder** (the one containing `manifest.json`)
 7. Click the extension icon and enter your Twenty CRM URL
 
+### Firefox
+
+1. **[⬇️ Download Latest Release](../../releases/latest)**
+2. Download the `*-firefox.zip` file
+3. **Unzip** the file - you should see `manifest.json` and other files directly inside
+4. Open Firefox → `about:debugging`
+5. Click **This Firefox** → **Load Temporary Add-on**
+6. Select any file inside the unzipped folder (e.g., `manifest.json`)
+7. Click the extension icon and enter your Twenty CRM URL
+
 > **Note**: You must be logged into your Twenty CRM in the same browser for the extension to work.
 >
 > **Tip**: After unzipping, verify the folder contains `manifest.json` at the root level, not inside a subfolder.
+>
+> **Firefox Note**: Temporary add-ons are removed when Firefox closes. For permanent installation, the extension would need to be signed by Mozilla.
 
 ---
 
@@ -90,16 +102,19 @@ cd twenty-crm-extension
 npm install
 
 # Development with hot reload
-npm run dev
+npm run dev          # Chrome
+npm run dev:firefox  # Firefox
 
 # Build for production
-npm run build
+npm run build           # Chrome
+npm run build:firefox   # Firefox
 
 # Create distributable ZIP
-npm run zip
+npm run zip           # Chrome → .output/*-chrome.zip
+npm run zip:firefox   # Firefox → .output/*-firefox.zip
 ```
 
-The built extension is in `.output/chrome-mv3/`
+The built extensions are in `.output/chrome-mv3/` and `.output/firefox-mv3/`
 
 ---
 
@@ -124,7 +139,7 @@ GitHub Actions will automatically build and create a release with the ZIP file.
 
 ## 🔧 Requirements
 
-- Chrome or Chromium-based browser
+- Chrome, Chromium-based browser, or Firefox
 - Self-hosted Twenty CRM instance
 - Logged into Twenty CRM in the same browser
 
@@ -142,7 +157,8 @@ GitHub Actions will automatically build and create a release with the ZIP file.
 ### Debug Logs
 
 - **Page console** (F12): Shows scraping logs
-- **Service Worker**: Go to `chrome://extensions` → click "Service Worker" under the extension
+- **Chrome Service Worker**: Go to `chrome://extensions` → click "Service Worker" under the extension
+- **Firefox Background Script**: Go to `about:debugging` → This Firefox → click "Inspect" under the extension
 
 ---
 
