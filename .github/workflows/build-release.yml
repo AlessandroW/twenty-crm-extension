@@ -76,7 +76,7 @@ jobs:
             3. Open Firefox → `about:debugging`
             4. Click **This Firefox** → **Load Temporary Add-on**
             5. Select any file inside the unzipped folder (e.g., `manifest.json`)
-            6. Click the extension icon and enter your Twenty CRM URL
+            6. Click the extension icon (🧩) and enter your Twenty CRM URL
 
             > ⚠️ Make sure you select the folder that has `manifest.json` directly inside, not a parent folder.
 

@@ -24,7 +24,7 @@ A browser extension for **Chrome** and **Firefox** to capture LinkedIn profiles 
 4. Open Firefox → `about:debugging`
 5. Click **This Firefox** → **Load Temporary Add-on**
 6. Select any file inside the unzipped folder (e.g., `manifest.json`)
-7. Click the extension icon and enter your Twenty CRM URL
+7. Click the extension icon (🧩) and enter your Twenty CRM URL
 
 > **Note**: You must be logged into your Twenty CRM in the same browser for the extension to work.
 >

@@ -1,8 +1,8 @@
 {
   "name": "twenty-crm-linkedin-extension",
-  "description": "Chrome extension to capture LinkedIn profiles and companies to Twenty CRM",
+  "description": "Browser extension to capture LinkedIn profiles and companies to Twenty CRM",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.2",
   "type": "module",
   "scripts": {
     "dev": "wxt",
