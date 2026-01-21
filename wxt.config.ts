@@ -16,5 +16,10 @@ export default defineConfig({
       96: '/icon/96.png',
       128: '/icon/128.png',
     },
+    browser_specific_settings: {
+      gecko: {
+        id: 'twenty-crm-linkedin@extension.local',
+      },
+    },
   },
 });
